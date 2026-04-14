@@ -16,3 +16,7 @@ CREATE TABLE HOBBIES (
     personId INT ,
     FOREIGN KEY (personId) REFERENCES Persons(personId)
 );
+
+ALTER TABLE Persons
+ADD COLUMN phone VARCHAR(15),
+DROP COLUMN city;
